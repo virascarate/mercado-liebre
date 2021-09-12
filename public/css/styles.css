@@ -1,0 +1,44 @@
+body {font-family: 'Roboto', sans-serif; }
+header {
+    background-color: #EAC926;
+    font-size: 12px;
+}
+.logo {
+    width: 200px; 
+    height: 80px;
+}
+.lupa{
+    background-color: white;
+    font-size: 2em;
+}
+
+
+.burger-menu {
+    background-color:blue;
+    font-size: 2em;
+    
+    color: white;
+}
+.titulares {
+    font-size: 24px;
+}
+.precios {
+    font-size: 18px;
+}
+.descuentos {
+    font-size: 16px;
+}
+.descripcion {
+    font-size: 16px;}
+
+.cuotas {
+      text-align:center ;
+  }
+  .pie-de-pagina{
+      text-align: center;
+  }
+  .iconos {
+    text-align: center;
+    font-size: 2em;
+    color:blue;
+  }
