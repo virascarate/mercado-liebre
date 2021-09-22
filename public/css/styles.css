@@ -61,6 +61,8 @@ width: 50%;
 }
 .barra{
 width: 50%;
+margin-left: 9px;
+margin-top:10px;
 }
 
 .lupa{
@@ -94,6 +96,7 @@ margin:auto;
 /*#region  ----------- MAIN ----------- */
 .main{
 width: 90%;
+margin:auto;
 }
 
 .titulares {
@@ -238,7 +241,9 @@ flex-wrap: wrap;
 .articulo img {
     width: 150px;
 }
+
 }
+
 
  
 
