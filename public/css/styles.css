@@ -18,18 +18,21 @@ width:100%;
 }
 body{
     background-color: #ebebeb;
+    font-family: "Roboto", Sans-Serif;
 }
 
 /*#endregion  ----------- BODY ----------- */
 /*#region  ----------- HEADER ----------- */
 
-header{
-padding: 20px;
-}
+
 
 .main-header {
 background-color: #EAC926;
 padding: 20 px ;
+position:fixed;
+top:0;
+width: 100%;
+z-index: 100;
 }
 
 .main-navbar {
@@ -53,16 +56,19 @@ padding:0;
 .logoybarra {
 display:flex;
 margin:0;
+padding:0;
+max-height: 100px;
 }
 
-.logo {
-width: 50%; 
 
-}
-.barra{
-width: 50%;
+
+.create-form{
 margin-left: 9px;
-margin-top:10px;
+
+
+}
+.banner{
+margin-top:181.2px;
 }
 
 .lupa{
@@ -155,16 +161,35 @@ font-size: 16px;
     padding:15px 0px;
     
 }
+.create-form{
+    padding: 20px 15px;
+    margin-top: 10px;
+   
+}
 .form-register{
     display: flex;
     justify-content: center;
+    
     
 }
 .form-login {
     display: flex;
     justify-content: center;
+    
 }
+.boton-form{
+    margin-left: 70px;
+    margin-top: 30px;
+    background-color: #39b54a;
+    color:white;
+    padding: 5px 15px;
+    transition: background-color 1s;
 
+}
+.boton-form:hover{
+    background-color:#0022AA ;
+}
+/*#endregion  ----------- MAIN ----------- */
 /*#region  ----------- FOOTER ----------- */
 
 .pie-de-pagina{
@@ -216,6 +241,27 @@ display: flex;
 justify-content: space-between;
 }
 
+.descripcion {
+    position: absolute;
+    z-index:-1;
+    bottom: 40px;
+    opacity: 0;
+    transition: position 1s;
+}
+.articulo:hover .descripcion{
+    position:static;
+    z-index: 0;
+    bottom: 0px;
+    opacity: 1;
+}
+
+.articulo {
+    transition: box-shadow 1s;
+    } 
+.articulo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+}
+ 
 .main-navbar ul {
 display: flex;
 }
@@ -228,10 +274,6 @@ display: none;
 margin: 0 15px;
 }
 
-.articulo {
-box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}  
-
 .articulos-main {
 display:flex;
 justify-content: space-between;
@@ -242,9 +284,22 @@ flex-wrap: wrap;
     width: 150px;
 }
 
+.banner{
+margin-top:110px;
+        }
+
+
+.icono-envio {
+    bottom: 50px;
+    transform: rotate(0deg);
+    transition: transform 0.5s;;
+}
+.icono-envio:hover {
+    transform: rotate(-90deg);
 }
 
+    
 
- 
+}
 
     /*#endregion  ----------- MEDIAS QUERIES----------- */
