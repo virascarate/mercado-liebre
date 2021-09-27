@@ -20,6 +20,3 @@ app.post ('/register', (req,res) => {res.redirect('/')})
 //LOGIN
 app.get ('/login', (req,res) => {res.sendFile(path.join(__dirname, '/views/login.html'))})
 app.post ('/login', (req,res) => {res.redirect('/')})
-
-app.get ('/search', (req,res) => {res.sendFile(path.join(__dirname, '/views/search.html'))})
-app.post ('/search', (req,res) => {res.redirect('/')})
