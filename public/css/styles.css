@@ -147,8 +147,10 @@ flex-grow:7;
 }
 
 .descripcion {
-font-size: 16px;
-}
+font-size: 16px; 
+display: none;
+    } 
+
 
 .desc-articulo{
     padding: 0px;
@@ -224,9 +226,7 @@ transition: color 1s;
 /*TABLET*/
 @media (min-width: 426px) 
 {
-    .descripcion { 
-        display: none;
-        } 
+    
     .logoybarra{
         display:flex;
         justify-content: space-around;
@@ -287,23 +287,17 @@ display: flex;
 justify-content: space-between;
 }
 
-.descripcion {
-    position: absolute;
-    z-index:-1;
-    bottom: 40px;
-    opacity: 0;
-    transition: position 1s;
-}
+
+
 .articulo:hover .descripcion{ 
-    position:static;
-    z-index: 0;
-    bottom: 0px;
-    opacity: 1;
+   display:flex;
+   opacity:1;
 }
 
 .articulo {
     transition: box-shadow 1s;
     width: 22%;
+    height: fit-content;
     
 } 
 .articulo:hover{
