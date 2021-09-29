@@ -334,7 +334,7 @@ margin-top:110px;
     transform: rotate(0deg);
     transition: transform 0.5s;;
 }
-.icono-envio:hover { /*ROTA EL CAMIONCITO*/
+.articulo:hover .icono-envio { /*ROTA EL CAMIONCITO*/
     transform: rotate(-90deg);
 }
 }
